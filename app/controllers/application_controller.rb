@@ -18,3 +18,6 @@ class ApplicationController < ActionController::Base
     tokumei_masuda: "増田担当大臣"
     }
 end
+
+
+
