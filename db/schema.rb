@@ -10,7 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171114041020) do
+ActiveRecord::Schema.define(version: 20171114085857) do
+
+  create_table "cabinets", force: :cascade do |t|
+    t.date "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "sori"
+    t.string "somu"
+    t.string "homu"
+    t.string "gaimu"
+    t.string "zaimu"
+    t.string "monbukagaku"
+    t.string "koseirodo"
+    t.string "norinsuisan"
+    t.string "keizaisangyo"
+    t.string "kokudokotsu"
+    t.string "kankyo"
+    t.string "boei"
+    t.string "kanbo"
+    t.string "koan"
+    t.string "tokumei_masuda"
+  end
 
   create_table "positions", force: :cascade do |t|
     t.string "name"
