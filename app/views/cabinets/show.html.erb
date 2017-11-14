@@ -1,5 +1,5 @@
 <p><%= @date %> 発足</p>
 
-<% @ministers.each do |minister| %>
-  <li><%= minister %></li>
+<% @cabinet.each do |position, name| %>
+  <li><%= position %>：<%= name %></li>
 <% end %>
