@@ -4,7 +4,7 @@ class CabinetsController < ApplicationController
     positions = POSITIONS
     cabinet = Cabinet.find_by(id: "2") #テスト用
     #cabinet = Cabinet.find_by(date: @date)
-    @cabinet = {}
+    @cabinet = {}    
     positions.each do |k, v|
       @cabinet[v] = cabinet.send(k)
     end

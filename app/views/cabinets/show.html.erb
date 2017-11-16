@@ -1,5 +1,7 @@
 <p><%= @date %> 発足</p>
 
 <% @cabinet.each do |position, name| %>
-  <li><%= position %><%= name %><img src="http://cdn1.www.st-hatena.com/users/<%= name[0,2]+ '/' + name %>/profile.gif"></li>
+  <ol>
+    <li><%= position %><a href="http://b.hatena.ne.jp/<%= name %>/bookmark"><%= name %><img src="http://cdn1.www.st-hatena.com/users/<%= name[0,2]+ '/' + name %>/profile.gif"></a></li>
+  </ol>
 <% end %>
